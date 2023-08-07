@@ -4,6 +4,7 @@
 
 body {
   font-family: "Inria Serif", serif;
+  
 }
 
 .card {
@@ -22,27 +23,35 @@ body {
   font-style: italic;
   font-size: 1em;
 }
-.card-body li:last-child {
+.card.producto li:last-child {
   font-weight: 700;
   font-size: 1.3em;
   font-style: normal;
 }
-.card a {
+.card a, .btnVerde {
   font-family: "Roboto", sans-serif;
   background-color: white;
   width: 100%;
+  color: white;
+  font-weight: 500;
 }
 
 
 .card:hover {
   box-shadow: 1px 2px 5px gray;
+  transition: all 0.6s;
 }
-.card:hover a {
+.card:hover a, .btnVerde {
   font-family: "Roboto", sans-serif;
   background-color: #7ea68c;
 }
-.card a:hover {
-  background-color: #7ea68cb3;
+
+.card:hover a {
+  transition: all 0.6s;
+}
+.card a:hover, .btnVerde:hover {
+  background-color: #7ea68cd0;
+  transition: all 0.6s;
 }
 
 /* nosotros.html */
@@ -74,4 +83,90 @@ body {
 /* Carrito.html */
 .tarjetas img {
   width: 65px;
+}
+
+.resumen{
+  background-color:#E3B8B2 ;  
+}
+
+.bordeBGris {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.94);
+}
+
+.card.resumen h5 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.card.resumen h6 {
+  font-size: 1.2em;
+  font-weight: 700;  
+}
+
+.carrito-productos img {
+  width: 125px;
+  height: 125px;
+}
+
+.carrito-productos .card-header h5 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.carrito-productos input:focus {
+  border: var(--bs-border-width) solid grey;
+  box-shadow: none;
+}
+
+.carrito-productos .card-body:nth-of-type(2){
+  border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)
+}
+
+.carrito-productos button:hover i {
+  color: #DC3545;
+  transition: all 0.4s;
+}
+
+/* navbar */
+
+.navbar{
+  background-color: #a18093;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: black;
+}
+
+.navbar-nav .nav-link.active , .activo {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: black;  
+}
+
+/* .navbar-nav p{
+  border-bottom: 1px solid #a18093;  
+}   */
+
+/* .navbar-nav p:hover{
+  padding-bottom: 0;
+  border-bottom: 1px solid white; 
+  
+ 
+    text-decoration: underline;
+    text-decoration-color:white; 
+    
+    
+}
+
+.navbar-nav .carroNav a:hover{
+  border-bottom: 1px solid white;
+  padding-bottom: 0;
+} */
+
+.navbar-nav a:hover, .carro-icono i:hover{
+  color: white;    
+  transition: all 0.6s;
+    
 }
