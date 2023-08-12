@@ -1,66 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a7a47f2cc7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a7a47f2cc7.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Digitalers-PI-(Nosotros)</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Digitalers</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid px-5 d-flex flex-column">
+          <a href="/" class="logo-top">
+            <img
+              class="img-fluid d-lg-inline-block"
+              src="/public/img/logo-eve-tagline.svg"
+              alt="Logo EVE Joyerías"
+            />
+          </a>
+          <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              
-            </ul>
-            <div class="d-flex">
-                <a href="carrito.html" class="text-reset me-3"
-                  ><i class="fa-solid fa-cart-shopping fa-2xl"></i
-                ></a>
-              </div>
+          </button> -->
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="navbar-nav">
+              <a class="nav-link px-0 desde-izq me-4" href="/">Inicio</a>
+
+              <a class="nav-link px-0 desde-izq me-4 activo" href="#"
+                >Nosotros</a
+              >
+              <a class="nav-link px-0 desde-izq me-4" href="contacto.html"
+                >Contacto</a
+              >
+            </div>
+            <a href="carrito.html" class="text-reset carrito-icono"
+              ><i class="fa-solid fa-cart-shopping fa-xl"></i
+            ></a>
           </div>
         </div>
       </nav>
-    </header>   
+    </header>
 
-    <main class="container nosotros mt-5">
-        <div class="row ">
-            <div class="col-7 ">
-                <h1>Sobre Nosotros</h1>
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab nostrum repellat dicta voluptatem enim! Veritatis corporis maxime sequi eius.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+    <main class="container  my-5">
+      <div class="row">
+        <div class="col-7">
+          <h1>Sobre Nosotros</h1>
+          <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab
+            nostrum repellat dicta voluptatem enim! Veritatis corporis maxime
+            sequi eius.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+            vero.
+          </p>
 
-                <div class="nosotros-iconos">
-                    <ul>
-                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square fa-3x"></i></a></li>
-                        <li><a href="https://twitter.com"><i class="fa-brands fa-twitter-square fa-3x"></i></a></li>
-                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square fa-3x"></i></a></li>
-                        <li><a href="mailto:lopezrios.sol@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-5">
-                <div class="nosotros-imagen">
-                    <img class="img-fluid" src="/public/img/sobre-nosotros.jpg" alt="">
-                </div>
-            </div>
+         <div class="nosotros-iconos ">
+            <ul class="list-unstyled d-flex justify-content-evenly ">
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-square fa-3x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter-square fa-3x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><i class="fa-brands fa-instagram-square fa-3x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="mailto:lopezrios.sol@gmail.com"
+                  ><i class="fa fa-envelope-square fa-3x"></i
+                ></a>
+              </li>
+            </ul>
+          </div> 
         </div>
+        <div class="col-5 bg-danger">
+            <img
+              class=""
+              src="/public/img/sobre-nosotros.jpg"
+              alt="sobre-nosotros"
+              style="width: 100%;"
+            />
+        </div>
+      </div>
     </main>
 
     <footer class="container-fluid"></footer>

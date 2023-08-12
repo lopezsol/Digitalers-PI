@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,16 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg  ">
-        <div class="container-fluid px-5  ">
-          <a class="navbar-brand" href="index.html">Digitalers</a>
-          <button
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid px-5 d-flex flex-column">
+          <a href="/" class="logo-top">
+            <img
+              class="img-fluid d-lg-inline-block"
+              src="/public/img/logo-eve-tagline.svg"
+              alt="Logo EVE Joyerías"
+            />
+          </a>
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -24,38 +30,38 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto ">
-              <!-- <li class="nav-item">
-                <a class="nav-link active activo" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link " href="pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="carro-icono " >
-              <a href="pages/carrito.html" class="text-reset  carrito " 
-                ><i class="fa-solid fa-cart-shopping fa-xl"></i
-              ></a>
+          </button> -->
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="navbar-nav">
+              <a class="nav-link px-0 desde-izq me-4 activo" href="#">Inicio</a>
+
+              <a class="nav-link px-0 desde-izq me-4" href="/pages/nosotros.html"
+                >Nosotros</a
+              >
+              <a class="nav-link px-0 desde-izq me-4" href="/pages/contacto.html"
+                >Contacto</a
+              >
+              <!-- <a class="nav-link px-0 desde-izq me-4" href="/pages/prueba.html"
+                >Prueba</a
+              > -->
             </div>
+            <a href="/pages/carrito.html" class="text-reset carrito-icono "
+              ><i class="fa-solid fa-cart-shopping fa-xl"></i
+            ></a>
           </div>
         </div>
       </nav>
+
+      
     </header>
 
-    <main class="container">
+    <main class="container my-5">
       <!--carrusel-->
-      <section class="row "></section>
+      <section class="row"></section>
 
-      <!--productos-->       
+      <!--productos-->
 
-      <section class="row mt-4 d-flex justify-content-evenly">
+      <section class="row d-flex justify-content-evenly">
         <!--balance-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
@@ -70,8 +76,8 @@
               <li class="list-group-item">Todo tipo de piel</li>
               <li class="list-group-item mt-1">$5.990</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4 "
-              >COMPRAR</a
+            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+              >AGREGAR</a
             >
           </div>
         </div>
@@ -91,8 +97,8 @@
               <li class="list-group-item">Todo tipo de piel</li>
               <li class="list-group-item mt-1">$7.149</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4"
-              >COMPRAR</a
+            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+              >AGREGAR</a
             >
           </div>
         </div>
@@ -112,15 +118,15 @@
               <li class="list-group-item">Todo tipo de piel</li>
               <li class="list-group-item mt-1">$5.749</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4"
-              >COMPRAR</a
+            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+              >AGREGAR</a
             >
           </div>
         </div>
         <!--RESTORE HAND CREAM-->
 
         <!--Restaurador de Puntas-->
-        <div class="card col-3 m-1  text-center rounded-4 producto">
+        <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
             src="/public/img/productos/restaurador-puntas.webp"
             class="card-img-top mx-auto d-block img-fluid"
@@ -133,18 +139,18 @@
               <li class="list-group-item">Puntas florecidas</li>
               <li class="list-group-item mt-1">$3.590</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4"
-              >COMPRAR</a
+            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+              >AGREGAR</a
             >
           </div>
         </div>
         <!--Restaurador de Puntas-->
 
         <!--Esponja facial-->
-        <div class="card col-3  m-1 text-center rounded-4 producto">
+        <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
             src="/public/img/productos/esponja-facial.webp"
-            class="card-img-top mx-auto d-blockimg-fluid"
+            class="card-img-top mx-auto d-block img-fluid"
             alt="Esponja facial"
           />
           <div class="card-body pt-0 d-flex flex-column">
@@ -154,8 +160,8 @@
               <li class="list-group-item">Piel Mixta</li>
               <li class="list-group-item mt-1">$3.649</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4"
-              >COMPRAR</a
+            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+              >AGREGAR</a
             >
           </div>
         </div>
@@ -175,8 +181,8 @@
               <li class="list-group-item">Todo tipo de piel</li>
               <li class="list-group-item mt-1">$4.590</li>
             </ul>
-            <a href="#" class="btn btn-success border border-0 rounded-4"
-              >COMPRAR</a
+            <a href="#" class="btn btn-dorado border border-0 rounded-4 mt-2 btnDorado "
+              >AGREGAR</a
             >
           </div>
         </div>
