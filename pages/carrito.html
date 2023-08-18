@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,16 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Digitalers</a>
-          <button
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid px-5 d-flex flex-column">
+          <a href="/" class="logo-top">
+            <img
+              class="img-fluid d-lg-inline-block"
+              src="/public/img/logo-eve-tagline.svg"
+              alt="Logo EVE Joyerías"
+            />
+          </a>
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -24,29 +30,21 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-                <a href="carrito.html" class="text-reset me-3"
-                  ><i class="fa-solid fa-cart-shopping fa-2xl"></i
-                ></a>
-              </div>
+          </button> -->
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="navbar-nav">
+              <a class="nav-link px-0 desde-izq me-4" href="/index.html">Inicio</a>
+
+              <a class="nav-link px-0 desde-izq me-4" href="nosotros.html"
+                >Nosotros</a
+              >
+              <a class="nav-link px-0 desde-izq me-4" href="contacto.html"
+                >Contacto</a
+              >
+            </div>
+            <a href="#" class="text-reset carrito-icono activo"
+              ><i class="fa-solid fa-cart-shopping fa-xl"></i
+            ></a>
           </div>
         </div>
       </nav>
@@ -54,99 +52,207 @@
 
     <main>
       <section class="container my-5">
-        <div class="row d-flex justify-content-center">
-          <div class="col-8 bg-primary">
-            <div class="card mb-4">
-              <div class="card-header py-4">
-                <h5 class="mb-0">Carrito - 2 artículos</h5>
+        <div class="row">
+          <div class="col-8 carrito-productos">
+            <div class="card shadow-none border-0">
+              <div
+                class="card-header border-0 p-0 px-1 d-flex justify-content-between align-items-center bg-white"
+              >
+                <h5 class="">Carrito</h5>
+                <span class="">3 artículos</span>
               </div>
 
-              <div class="card-body">
-                <div class="row py-3 mb-3">
-                  <div class="col-4 mb-1">
-                    <div class="bg-image rounded">
-                      <img class="w-100" src="/public/img/lampara.jpg" alt="" />
+              <div class="card-body py-0">
+                <div class="row align-items-center border-bottom">
+                  <div class="col-3">
+                    <div class="">
+                      <img
+                        class="mx-auto d-block"
+                        src="/public/img/productos/balance.webp"
+                        alt="Balance"
+                      />
                     </div>
                   </div>
 
-                  <div class="col-6">
-                    <p><strong>Lampara</strong></p>
-                    <p>Color</p>
-                    <p>Características</p>
-                    <p>Precio</p>
-                    <button
-                      type="button"
-                      class="btn btn-danger btn-sm me-2 mb-2"
-                    >
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
+                  <div class="col-4">
+                    <h5 class="card-title mb-0">VOL.1: Balance</h5>
+                    <ul class="list-unstyled mb-auto">
+                      <li class="list-group-item">ACF by Dadatina</li>
+                      <li class="list-group-item">Todo tipo de piel</li>
+                    </ul>
                   </div>
 
                   <div class="col-2">
-                    <input type="text" class="form-control text-center" placeholder="Cantidad" value="1" name="" id="">
-                    <p class="text-center mt-4"><strong>$1300.34</strong></p>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      placeholder="Cantidad"
+                      value="1"
+                      name=""
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-2 text-center precio">
+                    <p class="mb-0">$5.990</p>
+                  </div>
+
+                  <div class="col-1 p-0 text-center">
+                    <button type="button" class="btn p-0">
+                      <i class="fa-solid fa-trash-can mx-auto"></i>
+                    </button>
                   </div>
                 </div>
-                <hr />
               </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-body tarjetas">
-                <p><strong>Métodos de pagos aceptados</strong></p>
-                <img
-                  src="/public/img/tarjetas/American_Express-Logo.svg"
-                  alt="American_Express"
-                  class="me-2"
-                />
-                <img
-                  src="/public/img/tarjetas/Mastercard-Logo.svg"
-                  alt="Mastercard"
-                  class="me-2"
-                />
-                <img
-                  src="/public/img/tarjetas/Visa_Inc.-Logo.svg"
-                  alt="Visa_Inc"
-                  class="me-2"
-                />
-                <img
-                  src="/public/img/tarjetas/PayPal-Logo.svg"
-                  alt="PayPal"
-                  class="me-2"
-                />
+              <div class="card-body py-0">
+                <div class="row align-items-center border-bottom">
+                  <div class="col-3">
+                    <div class="">
+                      <img
+                        class="mx-auto d-block"
+                        src="/public/img/productos/eye-cream.webp"
+                        alt="Eye cream"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <h5 class="card-title mb-0">Madecassic eye cream</h5>
+                    <ul class="list-unstyled mb-auto">
+                      <li class="list-group-item">Coony</li>
+                      <li class="list-group-item">Todo tipo de piel</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-2">
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      placeholder="Cantidad"
+                      value="1"
+                      name=""
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-2 text-center">
+                    <p class="mb-0">$7.149</p>
+                  </div>
+
+                  <div class="col-1 p-0 text-center">
+                    <button type="button" class="btn p-0">
+                      <i class="fa-solid fa-trash-can mx-auto"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="row align-items-center border-bottom">
+                  <div class="col-3">
+                    <div class="">
+                      <img
+                        class="mx-auto d-block"
+                        src="/public/img/productos/restaurador-puntas.webp"
+                        alt="Restaurador de Puntas"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <h5 class="card-title mb-0">Restaurador de Puntas</h5>
+                    <ul class="list-unstyled mb-auto">
+                      <li class="list-group-item">Nic</li>
+                      <li class="list-group-item">Puntas florecidas</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-2">
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      placeholder="Cantidad"
+                      value="1"
+                      name=""
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-2 text-center">
+                    <p class="mb-0">$3.590</p>
+                  </div>
+
+                  <div class="col-1 p-0 text-center">
+                    <button type="button" class="btn p-0">
+                      <i class="fa-solid fa-trash-can mx-auto"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-4 bg-secondary">
-            <div class="card mb-4">
-              <div class="card-header py-3">
-                <h5 class="mb-0">Resumen carrito</h5>
+          <!--resumen-->
+          <div class="col-4">
+            <div class="card mb-5 resumen shadow-none py-5 bg-gris">
+              <div class="">
+                <h5 class="text-center mb-0 borde-b-gris">RESUMEN</h5>
               </div>
-              <div class="card-body">
+              <div class="card-body mt-3 mb-4">
                 <ul class="list-group list-group-flush">
                   <li
-                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0"
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-gris"
                   >
-                    Productos
-                    <span>$1300.34</span>
+                    Subtotal
+                    <span>$16.729</span>
                   </li>
                   <li
-                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0"
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-gris"
                   >
                     Envío
                     <span>Gratis</span>
                   </li>
                   <li
-                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0"
+                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-gris"
                   >
-                    <div>
-                      <strong>Total de la compra</strong>
-                      <strong>(IVA incluído)</strong>
-                      <span><strong>$1300.34</strong></span>
-                    </div>
+                    <p>Total</p>
+                    <span>$16.729</span>
                   </li>
                 </ul>
-                <button type="button" class="btn btn-success btn-lg btn-block mt-3">Ir a pagar</button>
+                <button
+                  type="button"
+                  class="btn mt-3 border-0 rounded-4 btn-dorado w-100"
+                >
+                  INICIAR COMPRA
+                </button>
+              </div>
+
+              <div class="tarjetas">
+                <h6 class="mb-3 text-center borde-b-gris">
+                  Métodos de pagos aceptados
+                </h6>
+
+                <div class="d-flex justify-content-evenly">
+                  <img
+                    src="/public/img/tarjetas/American_Express-Logo.svg"
+                    alt="American_Express"
+                    class=""
+                  />
+                  <img
+                    src="/public/img/tarjetas/Mastercard-Logo.svg"
+                    alt="Mastercard"
+                    class=""
+                  />
+                  <img
+                    src="/public/img/tarjetas/Visa_Inc.-Logo.svg"
+                    alt="Visa_Inc"
+                    class=""
+                  />
+                  <img
+                    src="/public/img/tarjetas/PayPal-Logo.svg"
+                    alt="PayPal"
+                    class=""
+                  />
+                </div>
               </div>
             </div>
           </div>
