@@ -90,21 +90,57 @@ body {
 
 /* cambiar para cada marca 
     transition me permite darle un retraso al cambio de color */
-.nosotros-iconos i:hover {
-  color: crimson;
-  transition: all 0.6s;
+
+.nosotros-iconos i.fa-facebook-square:hover {  
+  color: #1877f2;
 } 
+.nosotros-iconos i.fa-twitter-square:hover {  
+  color: #1da1f2;
+} 
+.nosotros-iconos i.fa-instagram-square:hover {  
+  color: #c13584;
+} 
+.nosotros-iconos i.fa-envelope-square:hover {  
+  color:  #d3954e;
+  color: #4d264c;
+} 
+.nosotros-iconos i:hover {transition: all 0.6s;}
+
+.nosotros p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.nosotros h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.equipo img {
+  width: 100%;
+}
+
+
+.nostros.ms-1 {
+  
+  
+}
+
+
+
+
 
 /* Carrito.html */
 /* resumen */
 .tarjetas img {
   width: 65px;
 }
-.bg-gris {
+.borde-dorado {
   /* background-color: #eeeeee; */
  border: 1px solid #d3954e;
 }
-.borde-b-gris {
+.borde-b-dorado {
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.175); */
  border-bottom: 1px solid #d3954e; 
  
