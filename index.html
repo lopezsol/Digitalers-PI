@@ -3,65 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/nabi/icono-NABI.webp"
+    />
     <script
       src="https://kit.fontawesome.com/a7a47f2cc7.js"
       crossorigin="anonymous"
     ></script>
-    <title>Digitalers-PI</title>
+    <title>Inicio - NABI</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg py-4">
-        <div class="container-fluid px-5 d-flex flex-column">
-          <a href="/" class="logo-top">
+        <div class="container-fluid d-flex flex-column">
+          <a class="navbar-brand logo-top" href="#">
             <img
               class="img-fluid d-lg-inline-block"
-              src="/public/img/logo-eve-tagline.svg"
-              alt="Logo EVE Joyerías"
+              src="/img/nabi/logo-NABI-negro.webp"
+              alt="Logo Nabi"
             />
           </a>
-          <!-- <button
-            class="navbar-toggler"
+          <button
+            class="navbar-toggler btn-nav"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="d-flex align-items-center justify-content-between w-100">
-            <div class="navbar-nav">
-              <a class="nav-link px-0 desde-izq me-4 activo" href="#">Inicio</a>
+          </button>
 
-              <a class="nav-link px-0 desde-izq me-4" href="/pages/nosotros.html"
-                >Nosotros</a
-              >
-              <a class="nav-link px-0 desde-izq me-4" href="/pages/contacto.html"
-                >Contacto</a
-              >
-              <!-- <a class="nav-link px-0 desde-izq me-4" href="/pages/prueba.html"
-                >Prueba</a
-              > -->
-            </div>
-            <a href="/pages/carrito.html" class="text-reset carrito-icono "
+          <div class="collapse navbar-collapse w-100 px-5">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link desde-izq activo"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link desde-izq" href="./pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link desde-izq" href="./pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <a
+              href="/pages/carrito.html"
+              class="text-reset carrito-icono ms-auto"
               ><i class="fa-solid fa-cart-shopping fa-xl"></i
             ></a>
           </div>
         </div>
       </nav>
-
-      
+      <div
+        class="collapse navbar-collapse d-lg-none d-xl-block d-xl-none px-3"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link desde-izq" aria-current="page" href="#"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="./pages/nosotros.html"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="./pages/contacto.html"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="/pages/carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="container my-5">
-      <!--carrusel-->
-      <section class="row"></section>
+    <main class="container">
+      <!--carousel-->
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/carousel/Imagen 1.svg"
+              class="d-block w-100"
+              alt="Serum"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel/Imagen 2.svg"
+              class="d-block w-100"
+              alt="Promociones"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel/Imagen 6.svg"
+              class="d-block w-100"
+              alt="Productos varios"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Atrás</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
 
       <!--productos-->
 
-      <section class="row d-flex justify-content-evenly">
+      <section class="row d-flex justify-content-evenly mt-7">
         <!--balance-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
@@ -86,7 +167,7 @@
         <!--coony-eyes-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
-            src="/public/img/productos/eye-cream.webp"
+            src="/img/productos/eye-cream.webp"
             class="card-img-top mx-auto d-block img-fluid"
             alt="Eye cream"
           />
@@ -107,7 +188,7 @@
         <!--RESTORE HAND CREAM-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
-            src="/public/img/productos/restore-hand-cream.webp"
+            src="/img/productos/restore-hand-cream.webp"
             class="card-img-top mx-auto d-block img-fluid"
             alt="Restore hand cream"
           />
@@ -128,7 +209,7 @@
         <!--Restaurador de Puntas-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
-            src="/public/img/productos/restaurador-puntas.webp"
+            src="/img/productos/restaurador-puntas.webp"
             class="card-img-top mx-auto d-block img-fluid"
             alt="Restaurador de Puntas"
           />
@@ -149,7 +230,7 @@
         <!--Esponja facial-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
-            src="/public/img/productos/esponja-facial.webp"
+            src="/img/productos/esponja-facial.webp"
             class="card-img-top mx-auto d-block img-fluid"
             alt="Esponja facial"
           />
@@ -170,7 +251,7 @@
         <!--Rodillo jade-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
-            src="/public/img/productos/rodillo-jade.webp"
+            src="/img/productos/rodillo-jade.webp"
             class="card-img-top mx-auto d-block img-fluid"
             alt="Rodillo de Jade"
           />
@@ -181,7 +262,9 @@
               <li class="list-group-item">Todo tipo de piel</li>
               <li class="list-group-item mt-1">$4.590</li>
             </ul>
-            <a href="#" class="btn btn-dorado border border-0 rounded-4 mt-2 btnDorado "
+            <a
+              href="#"
+              class="btn btn-dorado border border-0 rounded-4 mt-2 btnDorado"
               >AGREGAR</a
             >
           </div>
@@ -190,7 +273,33 @@
       </section>
     </main>
 
-    <footer class="container-fluid"></footer>
+    <footer class="container-fluid mt-10">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center my-6">
+          <div class="logo-top">
+            <img
+              class="img-fluid d-lg-inline-block"
+              src="/img/nabi/logo-NABI-blanco.webp"
+              alt="Logo Nabi"
+            />
+          </div>
+          <div class="footer-iconos mt-5 d-flex justify-content-evenly">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook-f fa-xl"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="mailto:lopezrios.sol@gmail.com">
+              <i class="fa fa-envelope fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

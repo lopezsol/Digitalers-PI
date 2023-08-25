@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,400&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +9,7 @@
 
 body {
   font-family: "Inria Serif", serif;
+  font-family: "Roboto", sans-serif;
   color: black;
 }
 
@@ -61,6 +61,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #d3954e;
   color: black;
+  font-weight: 500;
 }
 .producto .btn-dorado:hover,
 .btn-dorado:hover {
@@ -68,43 +69,6 @@ body {
   transition: all 0.6s;
 }
 /*-----*/
-
-/* nosotros.html */
-
-/* .nosotros-iconos {
-   margin: 3em 0; 
-}
- */
- .nosotros-iconos i {
-  /* margin-right: 0.8em; */
-  /* padding: 0; */
-  color: #323232;
-}
-
-
-.nosotros-iconos li {
- /* margin-right: 0;
-  padding: 0;
-  display: inline-block;  */
-} 
-
-/* cambiar para cada marca 
-    transition me permite darle un retraso al cambio de color */
-
-.nosotros-iconos i.fa-facebook-square:hover {  
-  color: #1877f2;
-} 
-.nosotros-iconos i.fa-twitter-square:hover {  
-  color: #1da1f2;
-} 
-.nosotros-iconos i.fa-instagram-square:hover {  
-  color: #c13584;
-} 
-.nosotros-iconos i.fa-envelope-square:hover {  
-  color:  #d3954e;
-  color: #4d264c;
-} 
-.nosotros-iconos i:hover {transition: all 0.6s;}
 
 .nosotros p {
   font-size: 1.2em;
@@ -121,29 +85,16 @@ body {
   width: 100%;
 }
 
-
-.nostros.ms-1 {
-  
-  
-}
-
-
-
-
-
 /* Carrito.html */
 /* resumen */
 .tarjetas img {
   width: 65px;
 }
 .borde-dorado {
-  /* background-color: #eeeeee; */
- border: 1px solid #d3954e;
+  border: 1px solid #d3954e;
 }
 .borde-b-dorado {
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.175); */
- border-bottom: 1px solid #d3954e; 
- 
+  border-bottom: 1px solid #d3954e;
 }
 .card.resumen h5 {
   font-size: 1.5em;
@@ -174,22 +125,22 @@ body {
   box-shadow: none;
 }
 
+.form-control:focus {
+  border: 1px solid grey;
+}
 .carrito-productos .card-body:nth-of-type(2) {
   border-top: 1px solid rgba(0, 0, 0, 0.175);
-  /* border-top: 1px solid #4d264c; */
 }
 
-/* .carrito-productos .card-body {
-  border-bottom: 1px solid #4d264c;
-  
-} */
-
 .carrito-productos button:hover i {
-  color: #e36975;
-  color: #d3954e;
+  color: #4d264c;
   transition: all 0.4s;
 }
 
+/* contacto */
+.contacto label {
+  font-weight: 700;
+}
 
 /* navbar */
 
@@ -201,37 +152,16 @@ body {
   background-color: transparent;
 }
 
+.navbar-collapse {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: transparent;
+}
+
 .navbar-nav .nav-link {
   color: black;
 }
-
-/*  .navbar-nav a li{
-  border-bottom: 1px solid #a18093;  
-}    */
-
-/* .navbar-nav a span {
-  border-bottom: 2px solid transparent;
-  padding-bottom: 0;
-  margin-bottom: 0;
-} */
-
-/* .navbar-nav .activo {
-  border-bottom: 2px solid #4d264c;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
- */
-/* .navbar-nav a:hover span {
-  border-bottom: 2px solid #4d264c;
-  padding-bottom: 3px;
-} */
-
-/* .navbar-nav .activo {
-  display:block;
-  content: '';
-  border-bottom: 2px solid #4d264c;
-  transition: none;
-} */
 
 .navbar-nav .activo:after {
   border-bottom: 2px solid #4d264c;
@@ -263,61 +193,23 @@ body {
 
 .logo-top img {
   width: 150px;
-  /* mix-blend-mode: multiply; */
 }
 
-/* .img-fluid {
-  max-width: 100%;
-  height: auto;
-} */
+/* footer */
+footer {
+  background-color: #4d264c;
+}
+.footer-iconos i {
+  color: #fff;
+}
+.footer-iconos i:hover {
+  transition: all 0.6s;
+  color: #ffffff9c;
+}
 
-
-/* @media (max-width: 500px) {
-  
-  header {
-    padding: 0!important;
-    margin: 0!important;
-
-  }
-
-  header .navbar .container-fluid {
-    background-color: #d3954e;
-    flex-direction: row!important;
-    justify-content: start;
-    padding: 0!important;
-  }
-
-  header .navbar .container-fluid {
-    background-color: #d3954e;
-    flex-direction: row!important;
-    justify-content: start;
-    align-items: center!important;
-    padding: 0!important;
-  }
-
-  header .navbar .logo {
-    background-color: red;
-    
-   
-  }
-
-  .logo-img {
-  }
-
-  header .navbar .navbar-nav {
-    background-color: #d3954e;
-    flex-direction: column!important;
-    padding: 0!important;
-    justify-content: start!important;
-    align-items: start!important;
-    background-color: #e36975;
-  }
-
-  .links {
-    flex-direction: column!important;
-    align-items: start!important;
-    padding: 0!important;
-  }
-  
-  
-} */
+.btn-nav {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}

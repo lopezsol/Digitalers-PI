@@ -3,77 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a7a47f2cc7.js" crossorigin="anonymous"></script>
-    <title>Digitalers-PI-(Contacto)</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/nabi/icono-NABI.webp"
+    />
+    <script
+      src="https://kit.fontawesome.com/a7a47f2cc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto - NABI</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg py-4">
-        <div class="container-fluid px-5 d-flex flex-column">
-          <a href="/" class="logo-top">
+        <div class="container-fluid d-flex flex-column">
+          <a class="navbar-brand logo-top" href="../index.html">
             <img
               class="img-fluid d-lg-inline-block"
-              src="/public/img/logo-eve-tagline.svg"
-              alt="Logo EVE Joyerías"
+              src="/img/nabi/logo-NABI-negro.webp"
+              alt="Logo Nabi"
             />
           </a>
-          <!-- <button
-            class="navbar-toggler"
+          <button
+            class="navbar-toggler btn-nav"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="d-flex align-items-center justify-content-between w-100">
-            <div class="navbar-nav">
-              <a class="nav-link px-0 desde-izq me-4" href="/index.html">Inicio</a>
+          </button>
 
-              <a class="nav-link px-0 desde-izq me-4" href="nosotros.html"
-                >Nosotros</a
-              >
-              <a class="nav-link px-0 desde-izq me-4 activo" href="#"
-                >Contacto</a
-              >
-            </div>
-            <a href="carrito.html" class="text-reset carrito-icono "
+          <div class="collapse navbar-collapse w-100 px-5">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link desde-izq" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link desde-izq" href="./nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link desde-izq activo"
+                  aria-current="page"
+                  href="#"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <a href="./carrito.html" class="text-reset carrito-icono ms-auto"
               ><i class="fa-solid fa-cart-shopping fa-xl"></i
             ></a>
           </div>
         </div>
       </nav>
+      <div
+        class="collapse navbar-collapse d-lg-none d-xl-block d-xl-none px-3"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" aria-current="page" href="#"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link desde-izq" href="./carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="container contacto my-5">
-      <div class="row ">
-          <div class="col-7 ">
-              <h1>Sobre Nosotros</h1>
-              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab nostrum repellat dicta voluptatem enim! Veritatis corporis maxime sequi eius.</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
-
-              <div class="nosotros-iconos">
-                  <ul>
-                      <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square fa-3x"></i></a></li>
-                      <li><a href="https://twitter.com"><i class="fa-brands fa-twitter-square fa-3x"></i></a></li>
-                      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square fa-3x"></i></a></li>
-                      <li><a href="mailto:lopezrios.sol@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-                  </ul>
-              </div>
+    <main class="container contacto mt-7">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h1 class="mb-3">Contacto</h1>
+            <p>Escribinos, nos contactaremos lo mas pronto posible.</p>
           </div>
-          <div class="col-5">
-              <div class="nosotros-imagen">
-                  <img class="" src="/public/img/sobre-nosotros.jpg" alt="">
-              </div>
-          </div>
+          <form class="mt-5">
+            <div class="mb-3">
+              <label for="validationCustom01" class="form-label"
+                >Nombre y apellido</label
+              >
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="validationCustom01"
+                placeholder="Silvia Medrano"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control shadow-none"
+                id="exampleFormControlInput1"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Mensaje</label
+              >
+              <textarea
+                class="form-control shadow-none"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Quería consultarles..."
+                required
+              ></textarea>
+            </div>
+            <button
+              class="btn border-0 rounded-4 btn-dorado px-3"
+              type="submit"
+            >
+              ENVIAR
+            </button>
+          </form>
+        </div>
       </div>
-  </main>
+    </main>
 
-    <footer class="container-fluid"></footer>
+    <footer class="container-fluid mt-10">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center my-6">
+          <div class="logo-top">
+            <img
+              class="img-fluid d-lg-inline-block"
+              src="/img/nabi/logo-NABI-blanco.webp"
+              alt="Logo Nabi"
+            />
+          </div>
+          <div class="footer-iconos mt-5 d-flex justify-content-evenly">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook-f fa-xl"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="mailto:lopezrios.sol@gmail.com">
+              <i class="fa fa-envelope fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
