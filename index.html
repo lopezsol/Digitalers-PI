@@ -59,11 +59,38 @@
                 >
               </li>
             </ul>
-            <a
+
+            <div class="dropdown dropstart ms-auto">
+              <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </a>
+              <ul id="carrito" class="dropdown-menu mx-2">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>                  
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                  <button id="vaciar-carrito" class="btn btn-primary">Vaciar carrito</button>
+                  <button id="procesar-pedido" class="btn btn-danger">Procesar compra</button>
+                </div>
+              </ul>
+            </div>
+            <!-- <a
               href="/pages/carrito.html"
               class="text-reset carrito-icono ms-auto"
               ><i class="fa-solid fa-cart-shopping fa-xl"></i
-            ></a>
+            ></a> -->
+                
+
+
           </div>
         </div>
       </nav>
@@ -142,7 +169,10 @@
 
       <!--productos-->
 
-      <section class="row d-flex justify-content-evenly mt-7">
+      <section
+        id="lista-productos"
+        class="row d-flex justify-content-evenly mt-7"
+      >
         <!--balance-->
         <div class="card col-3 m-1 text-center rounded-4 producto">
           <img
@@ -155,9 +185,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">ACF by Dadatina</li>
               <li class="list-group-item">Todo tipo de piel</li>
-              <li class="list-group-item mt-1">$5.990</li>
+              <li class="list-group-item mt-1 precio">$5.990</li>
             </ul>
-            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+            <a
+              href="#"
+              class="btn border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="1"
               >AGREGAR</a
             >
           </div>
@@ -176,9 +209,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">Coony</li>
               <li class="list-group-item">Todo tipo de piel</li>
-              <li class="list-group-item mt-1">$7.149</li>
+              <li class="list-group-item mt-1 precio">$7.149</li>
             </ul>
-            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+            <a
+              href="#"
+              class="btn border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="2"
               >AGREGAR</a
             >
           </div>
@@ -197,9 +233,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">Bek</li>
               <li class="list-group-item">Todo tipo de piel</li>
-              <li class="list-group-item mt-1">$5.749</li>
+              <li class="list-group-item mt-1 precio">$5.749</li>
             </ul>
-            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+            <a
+              href="#"
+              class="btn border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="3"
               >AGREGAR</a
             >
           </div>
@@ -218,9 +257,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">Nic</li>
               <li class="list-group-item">Puntas florecidas</li>
-              <li class="list-group-item mt-1">$3.590</li>
+              <li class="list-group-item mt-1 precio">$3.590</li>
             </ul>
-            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+            <a
+              href="#"
+              class="btn border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="4"
               >AGREGAR</a
             >
           </div>
@@ -239,9 +281,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">Konjac</li>
               <li class="list-group-item">Piel Mixta</li>
-              <li class="list-group-item mt-1">$3.649</li>
+              <li class="list-group-item mt-1 precio">$3.649</li>
             </ul>
-            <a href="#" class="btn border border-0 rounded-4 mt-2 btn-dorado"
+            <a
+              href="#"
+              class="btn border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="5"
               >AGREGAR</a
             >
           </div>
@@ -260,11 +305,12 @@
             <ul class="list-unstyled mb-auto">
               <li class="list-group-item">ACF</li>
               <li class="list-group-item">Todo tipo de piel</li>
-              <li class="list-group-item mt-1">$4.590</li>
+              <li class="list-group-item mt-1 precio">$4.590</li>
             </ul>
             <a
               href="#"
-              class="btn btn-dorado border border-0 rounded-4 mt-2 btnDorado"
+              class="btn btn-dorado border border-0 rounded-4 mt-2 btn-dorado agregar-carrito"
+              data-id="6"
               >AGREGAR</a
             >
           </div>
